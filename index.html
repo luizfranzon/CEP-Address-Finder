@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Buscador de CEP</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Buscador de Endereço por <abbr title="CÓDIGO DE ENDEREÇAMENTO POSTAL.">CEP</abbr></h1>
+        <input placeholder="00000-000" maxlength="9" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        
+        <div class="buttonsContainer">
+            <button id="search"><img class="search" width="25" src="./assets/Lupa-Cabo-Madeira-PNG.png" alt=""></button>
+            <button id="maps">Abrir no Maps</button>
+        </div>
+
+        <div class="address">
+
+            <p id="rua"></p> <!-- Rua -->
+            <p id="bairro"></p> <!-- Bairro -->
+            <p id="local"></p> <!-- Cidade -->
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
